@@ -1,0 +1,19 @@
+{
+  "name": "badum_tss",
+  "version": "1.0.0",
+  "description": "awesome js drum machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LastObserver/badum_tss.git"
+  },
+  "author": "LastObserver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LastObserver/badum_tss/issues"
+  },
+  "homepage": "https://github.com/LastObserver/badum_tss#readme"
+}
