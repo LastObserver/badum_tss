@@ -1,0 +1,7 @@
+include ./parts/soundRow.pug
+
+.dr-drumkit
+	.dr-drumkit-rows
+		- var sounds = ['boom', 'clap', 'hihat', 'kick', 'openhat', 'ride', 'snare', 'tink', 'tom']
+		each val, index in sounds
+			+dr-sound-row(index, val)

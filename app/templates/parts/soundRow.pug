@@ -1,0 +1,11 @@
+include ./soundPanel.pug
+
+mixin dr-sound-row(id, name)
+  .dr-sound-row(data-id='#{id}')
+    audio.dr-sound-row__audio(src="./sounds/"+name+".wav")
+    .dr-sound-title #{name}
+    .dr-sound-row__panels
+      - var i = 0
+      while i < 8
+        +dr-sound-panel(id, i)
+        - i++

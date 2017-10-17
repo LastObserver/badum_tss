@@ -20,7 +20,7 @@ module.exports = {
       }, {
         // ASSET LOADER
         // Reference: https://github.com/webpack/file-loader
-        test: /\.(png|jpg|jpeg|gif)$/,
+        test: /\.(png|jpg|jpeg|gif|wav)$/,
         loader: 'file',
       }
     ],

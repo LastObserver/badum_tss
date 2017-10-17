@@ -1,0 +1,52 @@
+body {
+  background-color: #333;
+}
+.dr-container {
+  position: relative;
+  top: 80px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.dr-drumkit-rows {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 24px;
+}
+.dr-sound-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.dr-sound-row__panels {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.dr-sound-title {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #aaa;
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 24px;
+  user-select: none;
+  cursor: default;
+}
+.dr-sound-panel {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: #888;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+  cursor: pointer;
+}
+.dr-sound-panel:hover {
+  transform: scale(1.05);
+  background: #fea71c;
+  box-shadow: 0 0 10px 0 #fea71c;
+}

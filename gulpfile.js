@@ -22,6 +22,12 @@ gulp.task('javascripts', () => {
     .pipe(gulp.dest('./dev/javascripts'))
 })
 
+gulp.task('sounds', () => {
+  gulp
+    .src('app/sounds/*.wav')
+    .pipe(gulp.dest('./dev/sounds'))
+})
+
 gulp.task('pug', () => {
   gulp
     .src('app/index.pug')
@@ -67,5 +73,5 @@ gulp.task('watch', function () {
 })
 
 gulp.task('default', () => {
-  sequence('pug', 'stylus', 'javascripts', 'webpack-dev-server', 'watch')
+  sequence('pug', 'stylus', 'sounds', 'javascripts', 'webpack-dev-server', 'watch')
 })
